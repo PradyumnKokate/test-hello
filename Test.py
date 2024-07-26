@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 from PIL import Image
 import streamlit as st
-import cv2 as cv2
+#import cv2 as cv2
 
 
 def run_yolo(image_url, confidence=0.15, iou=0.7):
