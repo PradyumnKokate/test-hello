@@ -13,7 +13,7 @@ def video_process(video_name,conf=0.2):
     #model_path = os.path.join('.', 'runs', 'detect', 'train', 'weights', 'last.pt')
 
     # Load a model
-    model = YOLO(r'C:\Users\prady\Downloads\Streamlit\runs\detect\train\weights\best.pt')  # load a custom model
+    model = YOLO(best.pt)  # load a custom model
 
     threshold = conf
 
