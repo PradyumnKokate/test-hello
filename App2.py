@@ -107,7 +107,7 @@ def main():
     )
         img_file_buff = st.sidebar.file_uploader("Upload an Image",type=["jpg","jpeg","png"])
         #image_param = st.query_params["image_param"]
-        DEMO_Image = "run\Images\image2.jpeg"
+        DEMO_Image = "image2.jpeg"
 
         # if img_str is not None:
         #     st.text(img_str)
