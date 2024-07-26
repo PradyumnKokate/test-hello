@@ -1,9 +1,8 @@
 import streamlit as st
-import cv2
 import numpy as np
 from PIL import Image
 from ultralytics import YOLO
-
+import cv2
 import tempfile
 from Test import run_yolo,my_function
 from video_predict_2 import video_process
