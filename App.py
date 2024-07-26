@@ -5,25 +5,12 @@ from PIL import Image
 from ultralytics import YOLO
 
 import tempfile
-#from yolov8 import YOLOv8
-#Images = r'C:\Users\prady\Downloads\Streamlit\Images'
-#image2 = r'C:\Users\prady\Downloads\Streamlit\Images\image2.jpeg'
-#model = YOLOv8(weights=)
 from Test import run_yolo,my_function
 from video_predict_2 import video_process
 import base64
 from io import BytesIO
-# import tkinter as tk
-# from tkinter import Label,Tk
-#from Image import decoder
-#from video import base64_to_image
-# from trial import base64_to_image , create_image_from_bytes
-# from newthings import base64_to_image
 from equality import base64_webp_to_png
 import re
-
-#img_str = st.query_params.get('img_str')
-#img_str = st.query_params.get('img_str')
 
 
 def main():
