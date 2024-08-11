@@ -8,7 +8,7 @@ from equality import base64_webp_to_png
 
 def main():
     img_str = st.query_params.get('img_str')
-    st.title(":rainbow[Object Detection for Fruits]")
+    st.title(":rainbow[Traffic cam vehicle detector]")
     st.sidebar.title("Settings")
     st.sidebar.subheader("Parameters")
     st.sidebar.markdown("Here you can alter the parameters according to your needs")
@@ -50,7 +50,7 @@ def main():
                     "For example, an object detection system could identify and locate cars, pedestrians, and traffic signs in a street scene image."
                     "This technology is widely used in various applications such as self-driving cars, image search, video surveillance, and more.")
         
-        st.markdown(":orange[**Fruit Detection**]")
+        st.markdown(":orange[**Vehicle Detection**]")
         st.markdown(
         """
         
@@ -107,21 +107,8 @@ def main():
     )
         img_file_buff = st.sidebar.file_uploader("Upload an Image",type=["jpg","jpeg","png"])
         #image_param = st.query_params["image_param"]
-        DEMO_Image = "image2.jpeg"
+        DEMO_Image = "27260-362770008_tiny.jpg"
 
-        # if img_str is not None:
-        #     st.text(img_str)
-        #     # Replace special characters into their usual characters
-        #     img_str = img_str.replace('-', '+')
-        #     img_str = img_str.replace('_', '/')
-        #     img_str = img_str.replace('.', '=')
-        #     image_from_query = base64_webp_to_png(img_str)
-        #     st.sidebar.text('Original Image')
-        #     st.sidebar.image(image_from_query)
-        #     run_yolo(image_url=image_from_query)
-        #     my_function(image_from_query)
-
-        # else:
         if img_file_buff is not None :#and image_param is None:
             img = cv2.imdecode(np.fromstring(img_file_buff.read(),np.uint8),1)
             image = np.array(Image.open(img_file_buff))
